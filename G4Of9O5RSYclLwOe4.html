@@ -1,0 +1,167 @@
+<html><head><base href="https://docs.aira.ai/network">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIRA Network | Documentation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+<style>
+  body {
+    background-color: #111;
+    color: white;
+  }
+  .aira-blue {
+    color: #4169E1;
+  }
+  .translucent {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .translucent:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .node {
+    fill: #4169E1;
+    opacity: 0.8;
+  }
+  .link {
+    stroke: rgba(255, 255, 255, 0.3);
+  }
+</style>
+</head>
+<body>
+<header class="bg-black py-6">
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="https://www.aira.ai/" class="text-2xl font-bold text-white">AIRA Docs</a>
+      </div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="https://www.aira.ai/platform" class="text-white hover:text-gray-300">Platform</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Network</a></li>
+          <li><a href="https://www.aira.ai/about" class="text-white hover:text-gray-300">About</a></li>
+          <li><a href="/" class="text-white hover:text-gray-300">Docs</a></li>
+        </ul>  
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-4 md:px-0 py-12">
+  <section class="mb-12">
+    <h1 class="text-4xl font-bold mb-4">AIRA Network</h1>
+    <p class="text-xl text-gray-400 mb-8">Discover the global network of on-chain executors powering AIRA</p>
+    
+    <div class="mb-8">
+      <svg id="network" class="w-full h-96"></svg>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Decentralized Computing</h2>
+        <p class="text-gray-400 mb-4">AIRA leverages a decentralized network of computing nodes to execute AI models in a secure and scalable manner. By distributing the workload across multiple nodes, AIRA ensures high availability, fault tolerance, and efficient resource utilization.</p>
+      </div>
+      
+      <div>  
+        <h2 class="text-2xl font-bold mb-4">Incentivized Participation</h2>
+        <p class="text-gray-400 mb-4">Executors in the AIRA network are incentivized to contribute their computing resources through token rewards. This creates a self-sustaining ecosystem where participants are motivated to maintain and grow the network, ensuring its long-term stability and success.</p>
+      </div>
+      
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Robust Security</h2>  
+        <p class="text-gray-400 mb-4">AIRA employs advanced security measures to protect data privacy and integrity. Blockchain technology ensures immutability and transparency, while encryption and secure communication protocols safeguard sensitive information. The decentralized architecture minimizes single points of failure, enhancing overall system security.</p>
+      </div>
+      
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Open Participation</h2>
+        <p class="text-gray-400 mb-4">The AIRA network welcomes participation from executors and developers around the world. Anyone can join the network by setting up an executor node and contributing computing resources. This open and inclusive approach fosters innovation, collaboration, and the growth of a vibrant ecosystem.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="mb-12">
+    <h2 class="text-3xl font-bold mb-4">Getting Started</h2>
+    <p class="text-gray-400 mb-4">Learn how to set up an executor node and join the AIRA network:</p>
+    <ol class="list-decimal list-inside mb-4 text-gray-400">
+      <li>Install the AIRA node software on your machine</li>
+      <li>Configure the node settings and connect to the network</li>
+      <li>Stake tokens to participate in model execution and earn rewards</li>
+      <li>Monitor your node's performance and contributions</li>  
+    </ol>
+    <a href="https://github.com/aira-ai/node" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Node Setup Guide</a>
+  </section>
+  
+  <section>
+    <h2 class="text-3xl font-bold mb-4">Network Explorer</h2>
+    <p class="text-gray-400 mb-4">Explore the AIRA network in real-time and view key metrics:</p>
+    <ul class="mb-4 text-gray-400">
+      <li>Network status and health</li>
+      <li>Number of active executors</li>  
+      <li>Total computing power</li>
+      <li>Token distribution and staking</li>
+    </ul>
+    <a href="https://explorer.aira.ai" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Launch Explorer</a>
+  </section>
+</main>
+
+<footer class="bg-black py-8">  
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="md:flex md:items-center md:justify-between">
+      <div class="mb-4 md:mb-0">  
+        <a href="https://www.aira.ai/" class="text-2xl font-bold text-white">AIRA</a>
+      </div>
+      <div class="mb-4 md:mb-0">
+        <ul class="flex space-x-4">
+          <li><a href="https://www.aira.ai/terms" class="text-white hover:text-gray-300">Terms of Service</a></li>
+          <li><a href="https://www.aira.ai/privacy" class="text-white hover:text-gray-300">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-gray-400">&copy; 2023 AIRA. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+  // D3.js force-directed graph simulation
+  const svg = d3.select("#network");
+  const width = svg.node().getBoundingClientRect().width;
+  const height = svg.node().getBoundingClientRect().height;
+
+  const nodes = Array.from({ length: 50 }, () => ({}));
+  const links = Array.from({ length: 70 }, () => ({
+    source: Math.floor(Math.random() * nodes.length),
+    target: Math.floor(Math.random() * nodes.length)
+  }));
+
+  const simulation = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.index))
+    .force("charge", d3.forceManyBody().strength(-20))
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+  const link = svg.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(links)
+    .join("line")
+    .attr("class", "link");
+
+  const node = svg.append("g")
+    .attr("class", "nodes")
+    .selectAll("circle")
+    .data(nodes)
+    .join("circle")
+    .attr("r", 5)
+    .attr("class", "node");
+
+  simulation.on("tick", () => {
+    link.attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x) 
+      .attr("y2", d => d.target.y);
+
+    node.attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+  });
+</script>
+
+</body></html>

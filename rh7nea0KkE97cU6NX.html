@@ -1,0 +1,128 @@
+<html><head><base href="https://docs.aira.ai/">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIRA Documentation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+<style>
+  body {
+    background-color: #111;
+    color: white;
+  }
+  .aira-blue {
+    color: #4169E1;
+  }
+  .translucent {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .translucent:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  code {
+    color: #4169E1;
+  }
+</style>
+</head>
+<body>
+<header class="bg-black py-6">
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="https://www.aira.ai/" class="text-2xl font-bold text-white">AIRA Docs</a>
+      </div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="https://www.aira.ai/platform" class="text-white hover:text-gray-300">Platform</a></li>
+          <li><a href="https://www.aira.ai/network" class="text-white hover:text-gray-300">Network</a></li>
+          <li><a href="https://www.aira.ai/about" class="text-white hover:text-gray-300">About</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Docs</a></li>
+        </ul>  
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-4 md:px-0 py-12">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="md:col-span-1">
+      <nav class="mb-8">
+        <ul class="space-y-2">
+          <li><a href="#getting-started" class="block p-2 rounded translucent hover:bg-opacity-20">Getting Started</a></li>
+          <li><a href="#aira-platform" class="block p-2 rounded translucent hover:bg-opacity-20">AIRA Platform</a></li>
+          <li><a href="#aira-network" class="block p-2 rounded translucent hover:bg-opacity-20">AIRA Network</a></li>
+          <li><a href="#contributing" class="block p-2 rounded translucent hover:bg-opacity-20">Contributing</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="md:col-span-3">
+      <section id="getting-started" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">Getting Started</h2>
+        <p class="text-gray-400 mb-4">Learn how to get started with AIRA and integrate it into your projects.</p>
+        <pre class="p-4 rounded translucent text-sm mb-4"><code># Install AIRA CLI
+npm install -g aira-cli
+
+# Initialize a new project
+aira init my-project
+
+# Deploy your AI model
+aira deploy model.onnx
+        </code></pre>
+        <a href="quickstart" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Quickstart Guide</a>
+      </section>
+
+      <section id="aira-platform" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">AIRA Platform</h2>
+        <p class="text-gray-400 mb-4">Explore the features and capabilities of the AIRA decentralized AI platform.</p>
+        <ul class="list-disc list-inside mb-4 text-gray-400">
+          <li>Decentralized AI model hosting and execution</li>
+          <li>Secure and private data handling</li>
+          <li>Scalable and cost-effective infrastructure</li>
+          <li>Easy integration with existing systems</li>
+        </ul>
+        <a href="platform" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</a>
+      </section>
+
+      <section id="aira-network" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">AIRA Network</h2>
+        <p class="text-gray-400 mb-4">Discover the global network of on-chain executors powering AIRA.</p>  
+        <ul class="list-disc list-inside mb-4 text-gray-400">
+          <li>Decentralized computing resources</li>
+          <li>Incentivized participation through token rewards</li>
+          <li>Robust security and fault tolerance</li>
+          <li>Open participation for executors and developers</li>
+        </ul>
+        <a href="network" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Explore Network</a>
+      </section>
+
+      <section id="contributing" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">Contributing</h2>
+        <p class="text-gray-400 mb-4">Learn how you can contribute to the development and growth of AIRA.</p>
+        <ul class="list-disc list-inside mb-4 text-gray-400">
+          <li>Contribute to open-source repositories</li>
+          <li>Participate in community discussions and forums</li> 
+          <li>Provide feedback and suggestions for improvement</li>
+          <li>Join the AIRA ambassador program</li>
+        </ul>
+        <a href="contributing" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Involved</a>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-black py-8">  
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="md:flex md:items-center md:justify-between">
+      <div class="mb-4 md:mb-0">  
+        <a href="https://www.aira.ai/" class="text-2xl font-bold text-white">AIRA</a>
+      </div>
+      <div class="mb-4 md:mb-0">
+        <ul class="flex space-x-4">
+          <li><a href="terms" class="text-white hover:text-gray-300">Terms of Service</a></li>
+          <li><a href="privacy" class="text-white hover:text-gray-300">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-gray-400">&copy; 2023 AIRA. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body></html>

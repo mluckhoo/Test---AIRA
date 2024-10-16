@@ -1,0 +1,111 @@
+<html><head><base href="https://docs.aira.ai/quickstart">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIRA Quickstart Guide</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+<style>
+  body {
+    background-color: #111;  
+    color: white;
+  }
+  .aira-blue {
+    color: #4169E1; 
+  }
+  .translucent {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .translucent:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  code {
+    color: #4169E1;
+  }
+</style>
+</head>
+<body>
+<header class="bg-black py-6">
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="/" class="text-2xl font-bold text-white">AIRA Docs</a>
+      </div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li><a href="https://www.aira.ai/platform" class="text-white hover:text-gray-300">Platform</a></li>
+          <li><a href="https://www.aira.ai/network" class="text-white hover:text-gray-300">Network</a></li>
+          <li><a href="https://www.aira.ai/about" class="text-white hover:text-gray-300">About</a></li>
+          <li><a href="https://docs.aira.ai/" class="text-white hover:text-gray-300">Docs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-4 md:px-0 py-12">
+  <h1 class="text-4xl font-bold mb-8">Quickstart Guide</h1>
+  
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Installation</h2>
+    <p class="text-gray-400 mb-4">To get started with AIRA, you'll need to install the AIRA CLI. Open a terminal and run the following command:</p>
+    <pre class="p-4 rounded translucent text-sm mb-4"><code>npm install -g aira-cli</code></pre>
+    <p class="text-gray-400">This will install the AIRA CLI globally on your system.</p>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Project Setup</h2> 
+    <p class="text-gray-400 mb-4">Create a new directory for your AIRA project and navigate to it:</p>
+    <pre class="p-4 rounded translucent text-sm mb-4"><code>mkdir my-aira-project
+cd my-aira-project</code></pre>
+    <p class="text-gray-400 mb-4">Initialize a new AIRA project in the directory:</p>
+    <pre class="p-4 rounded translucent text-sm mb-4"><code>aira init</code></pre>
+    <p class="text-gray-400">This command will set up the necessary files and configurations for your AIRA project.</p>
+  </section>
+  
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Model Deployment</h2>
+    <p class="text-gray-400 mb-4">Once your project is set up, you can deploy your AI model to the AIRA network. Make sure your model file (e.g., model.onnx) is in the project directory, then run:</p> 
+    <pre class="p-4 rounded translucent text-sm mb-4"><code>aira deploy model.onnx</code></pre>
+    <p class="text-gray-400">AIRA will handle the deployment process, distributing your model across the network of executors.</p>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Model Execution</h2>
+    <p class="text-gray-400 mb-4">To execute your deployed model and make predictions, use the AIRA API:</p>
+    <pre class="p-4 rounded translucent text-sm mb-4"><code>import aira
+
+client = aira.Client()
+result = client.execute("model.onnx", input_data)
+print(result)</code></pre>
+    <p class="text-gray-400">The AIRA client will handle the communication with the network and return the model's predictions.</p>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Next Steps</h2>  
+    <p class="text-gray-400 mb-4">Congratulations! You've successfully set up an AIRA project and deployed your AI model. Here are some next steps to explore:</p>
+    <ul class="list-disc list-inside mb-4 text-gray-400">
+      <li>Learn more about the <a href="https://www.aira.ai/platform" class="text-blue-400 hover:underline">AIRA Platform</a> and its features</li>
+      <li>Explore the <a href="https://www.aira.ai/network" class="text-blue-400 hover:underline">AIRA Network</a> and how it enables decentralized AI</li>
+      <li>Dive deeper into AIRA's <a href="https://docs.aira.ai/" class="text-blue-400 hover:underline">documentation</a> to unlock advanced capabilities</li>
+      <li>Join the AIRA <a href="https://www.aira.ai/community" class="text-blue-400 hover:underline">community</a> to collaborate with other developers and enthusiasts</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="bg-black py-8">
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="md:flex md:items-center md:justify-between">
+      <div class="mb-4 md:mb-0">
+        <a href="https://www.aira.ai/" class="text-2xl font-bold text-white">AIRA</a>  
+      </div>
+      <div class="mb-4 md:mb-0">
+        <ul class="flex space-x-4">
+          <li><a href="https://docs.aira.ai/terms" class="text-white hover:text-gray-300">Terms of Service</a></li>
+          <li><a href="https://docs.aira.ai/privacy" class="text-white hover:text-gray-300">Privacy Policy</a></li> 
+        </ul>
+      </div>
+      <div>
+        <p class="text-gray-400">&copy; 2023 AIRA. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body></html>
